@@ -11,3 +11,4 @@ function toggleMode() {
 }
 
 modeToggle.addEventListener('click', toggleMode);
+

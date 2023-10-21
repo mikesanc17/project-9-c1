@@ -184,3 +184,113 @@ input:focus + .slider {
 input:checked + .slider:before {
   transform: translateX(1.63rem);
 }
+
+/*About Us Fade and Slide In On Scroll*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: rgb(42, 61, 165);
+}
+
+.container-about {
+  margin: 0 auto;
+  background-image: url("https://images.unsplash.com/photo-1584968124544-d10ce10dd21f?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  max-width: 1400px;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  background-color: rgb(250, 249, 246);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: #000;
+  background-color: rgb(250, 249, 246);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-radius: 10px;
+
+}
+
+.item-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.item-about:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  background-color: rgb(250, 249, 246);
+  color: black;
+  text-align: center;
+  padding: 5rem;
+  border-radius: 10px;
+  border-style: solid;
+  margin: 10rem;
+}
+
+.item-about > p {
+  text-align: center;
+}
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+.goals-about {
+  text-align: left;
+}
+
+/*Images in about us section*/
+
+.anaheim-pic {
+  width: 500px;
+}
+
+.fight-entrance {
+  width: 150px;
+}
+
+.running-man {
+  width: 150px;
+}
+
+.html-books {
+  width: 120px;
+}
+
+
+
